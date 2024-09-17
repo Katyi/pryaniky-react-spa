@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/navbar';
 import Login from './pages/Login/Login';
 import Main from './pages/main/Main';
@@ -8,7 +8,7 @@ import UpdatePost from './pages/update/UpdatePost';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
@@ -16,7 +16,7 @@ function App() {
           <Route path="/new" element={<CreatePost />} />
           <Route path="/update" element={<UpdatePost />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

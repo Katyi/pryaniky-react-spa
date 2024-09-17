@@ -1,6 +1,5 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { AppBar, Button, styled, Toolbar, Typography } from '@mui/material';
-import ClearIcon from '@mui/icons-material/Clear';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const StyledToolbar = styled(Toolbar)({
